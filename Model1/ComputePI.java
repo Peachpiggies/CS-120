@@ -20,22 +20,22 @@ public class ComputePI {
 
         //PI = Math.PI;
 
-        value1 = 1;
-        value2 = 1;
+        value1 = 0;
+        value2 = 0;
 
         Pie = 900000; 
 
         while (denominator1 <= Pie) {
 
-            denominator1 += 4;
             value1 += 1/denominator1;
+            denominator1 += 4;
 
         };
 
         while (denominator2 <= Pie) {
 
-            denominator2 += 4;
             value2 += 1/denominator2;
+            denominator2 += 4;
 
         };
 
