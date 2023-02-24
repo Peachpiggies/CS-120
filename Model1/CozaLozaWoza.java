@@ -17,33 +17,35 @@ public class CozaLozaWoza {
 
         int num, three, five;
 
-        num = 1 ;
-        three = num % 3;
-        five = num % 5;
+        three = 0;
+        five = 0;
+        num = 1;
 
-        while (num <= 9999999) {
+        while (num <= 999) {
 
-            System.out.print(num + "");
+            System.out.print(num + " ");
+            
+            num += 1;
+            // three = num % 3;
+            // five = num % 5;
 
-            if (num == three) {
-
-                System.out.print("Coza");
-
-            }
-
-            else if (num == five) {
-
-                System.out.print("Loza");
-
-            }
-
-            else if (num == five && three) {
+            if ((num % 5 == five) && (num % 3 == three)) {
 
                 System.out.print("CozaLoza");
 
             }
 
-            num =+ 1;
+            else if (num % 3 == three) {
+
+                System.out.print("Coza");
+
+            }
+
+            else if (num % 5 == five) {
+
+                System.out.print("Loza");
+
+            }
         
         }
 
