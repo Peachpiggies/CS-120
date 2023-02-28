@@ -10,17 +10,27 @@ public class Tribonacci {
 
     public static void main(String[] args) {
 
-        int n, // n is n in the Tribonacci
-            num, /* num will be the subtraction of n*/
+        int n1, // n1 is first number in the Tribonacci
+            n2, // n2 is second number in the Tribonacci
+            n3, // n3 is third number in the Tribonacci
+            count, /* this variable will start at 0 until 20 in the while statement */
             sequence /* will be the variable to send output */;
 
-        n = 1;
-        num = 1;
+        n1 = 1;
+        n2 = 1;
+        n3 = 2;
+        count = 0;
 
-        while (num <= 20) {
+        System.out.print(n1 + " " + n2 + " " + n3);
 
-            sequence = n - num;
-            
+        while (count <= 20) {
+
+            sequence = n1 + n2 + n3;  
+            System.out.print(" " + sequence);  
+            n1 = n2;  
+            n2 = n3;
+            n3 = sequence;
+            count += 1;
 
         }
 
