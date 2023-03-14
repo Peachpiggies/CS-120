@@ -11,7 +11,7 @@ public class ComputePI {
     public static void main(String[] args) {
 
         float denominator1, denominator2, Pie, π /* result that will be print off */,
-         /*Trueπ, */ value1, value2;
+         Trueπ, value1, value2;
 
         //double PI;
 
@@ -40,9 +40,10 @@ public class ComputePI {
         };
 
         π = 4 * (value1 - value2);
-        //Trueπ = π/(PI * 100);
+        Trueπ = (π / (float) Math.PI) * 100;
 
-        System.out.println(π);
+        System.out.println("My π is :" + π);
+        System.out.println("The system π is :" + Trueπ);
 
     }
 
