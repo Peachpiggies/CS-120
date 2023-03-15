@@ -12,11 +12,21 @@ public class CheckerBoard {
 
      for (int row = 1; row <= 7; row++) {   //outerloop
 		  
+            if (row % 2 == 0) {
+
+                System.out.print(" ");
+
+            }
+
         for (int mark = 1; mark <= 7; mark++) {  //innerloop
-           System.out.print("# ");
+
+            System.out.print("# ");
+            //System.out.println();
+
         }
         
-        System.out.println();
+        //  System.out.print(" ");
+         System.out.println();
 
       }
 
