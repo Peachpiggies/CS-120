@@ -9,18 +9,36 @@ public class PrintPattern {
 
     public static void main(String[] args) {
 
-        for (int row = 1; row <= 9; row++) {
+      int  row, col, size;
 
-          for (int col = 1; col <= 8; col++) {
+      for (row = 1; row <= 8; row++) {
+
+          for (col = 1; col <= row; col++) {
             
             // col++;
-            System.out.println("# ");
+            System.out.print("# ");
 
          }
 
          System.out.println();
           
-        }
+      }
+
+      System.out.println("(a)"); // finish (a)
+
+      for (row = 8; row >= 1; row--) {
+
+        for (col = 1; col <= row; col++) {
+            
+          System.out.print("# ");
+
+       }
+
+       System.out.println();
+
+      }
+
+      System.out.println("(b)"); // finish (b)
 
     }
     
