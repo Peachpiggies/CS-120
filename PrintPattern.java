@@ -118,6 +118,282 @@ public class PrintPattern {
 
       System.out.println("(e)"); // finish (e)
 
+      for (row = 1; row <= 7; row++) {
+
+        for (col = 1; col <= 7; col++) {
+
+          if (row == 1 || row == 7) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 2 && col == 2) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 3 && col == 3) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 4 && col == 4) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 5 && col == 5) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 6 && col == 6) {
+
+            System.out.print("* ");
+
+          }
+
+          else {
+
+            System.out.print("  ");
+
+          }
+
+        }
+
+        System.out.println();
+
+      }
+
+      System.out.println("(f)"); // finish (f)
+
+      for (row = 1; row <= 7; row++) {
+
+        for (col = 1; col <= 7; col++) {
+
+          if (row == 1 || row == 7) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 2 && col == 6) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 3 && col == 5) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 4 && col == 4) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 5 && col == 3) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 6 && col == 2) {
+
+            System.out.print("* ");
+
+          }
+
+          else {
+
+            System.out.print("  ");
+
+          }
+
+        }
+
+        System.out.println();
+
+      }
+
+      System.out.println("(g)"); // finish (g)
+
+      for (row = 1; row <= 7; row++) {
+
+        for (col = 1; col <= 7; col++) {
+
+          if (row == 1 || row == 7) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 2 && col == 2) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 3 && col == 3) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 4 && col == 4) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 5 && col == 5) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 6 && col == 6) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 2 && col == 6) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 3 && col == 5) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 4 && col == 4) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 5 && col == 3) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 6 && col == 2) {
+
+            System.out.print("* ");
+
+          }
+
+          else {
+
+            System.out.print("  ");
+
+          }
+
+        }
+
+        System.out.println();
+
+      }
+
+      System.out.println("(h)");
+
+      for (row = 1; row <= 7; row++) {
+
+        for (col = 1; col <= 7; col++) {
+
+          if (row == 1 || row == 7 || col == 1 || col == 7) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 2 && col == 2) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 3 && col == 3) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 4 && col == 4) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 5 && col == 5) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 6 && col == 6) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 2 && col == 6) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 3 && col == 5) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 4 && col == 4) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 5 && col == 3) {
+
+            System.out.print("* ");
+
+          }
+
+          else if (row == 6 && col == 2) {
+
+            System.out.print("* ");
+
+          }
+
+          else {
+
+            System.out.print("  ");
+
+          }
+
+        }
+        
+        System.out.println();
+
+      }
+
+      System.out.println("(i)"); // finish (i)
+
     }
     
 }
