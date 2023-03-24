@@ -65,7 +65,7 @@ public class PrintPattern {
 
           }
         
-      System.out.println("(c)");
+      System.out.println("(c)"); // finish (c)
 
       size2 = height2 - 1;
 
@@ -92,7 +92,31 @@ public class PrintPattern {
 
           }
 
-      System.out.println("(d)");
+      System.out.println("(d)"); //finish (d)
+
+      for (row = 1; row <= 7; row++) {
+
+        for (col = 1; col <= 7; col++) {
+
+          if (row == 1 || row == 7 || col == 1 || col == 7) {
+
+            System.out.print("* ");
+
+          }
+
+          else {
+
+            System.out.print("  ");
+  
+          }
+
+        }
+
+        System.out.println();
+
+      }
+
+      System.out.println("(e)"); // finish (e)
 
     }
     
