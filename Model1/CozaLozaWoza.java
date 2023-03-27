@@ -15,15 +15,14 @@ public class CozaLozaWoza {
 
     public static void main(String[] args) {
 
-        int num, three, five;
+        int num, three, five, seven;
 
         three = 0;
         five = 0;
+        seven = 0;
         num = 1;
 
-        while (num <= 999) {
-
-            System.out.print(num + " ");
+        while (num <= 110) {
             
             num += 1;
             // three = num % 3;
@@ -31,19 +30,37 @@ public class CozaLozaWoza {
 
             if ((num % 5 == five) && (num % 3 == three)) {
 
-                System.out.print("CozaLoza");
+                System.out.print("CozaLoza ");
+
+            }
+
+            else if ((num % 7 == seven) && (num % 3 == three)) {
+
+                System.out.print("CozaWoza ");
 
             }
 
             else if (num % 3 == three) {
 
-                System.out.print("Coza");
+                System.out.print("Coza ");
 
             }
 
             else if (num % 5 == five) {
 
-                System.out.print("Loza");
+                System.out.print("Loza ");
+
+            }
+
+            else if (num % 7 == seven) {
+
+                System.out.print("Woza ");
+
+            }
+
+            else {
+
+                System.out.print(num + " ");
 
             }
         
