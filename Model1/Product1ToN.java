@@ -10,7 +10,7 @@ public class Product1ToN {
 
     public static void main(String[] args) {
 
-        float low1, low2, product1, product2, max1, max2;
+        long low1, low2, product1, product2, max1, max2;
 
         low1 = 1;
         
@@ -18,7 +18,7 @@ public class Product1ToN {
 
         product1 = 1;
 
-        float num1 = low1;
+        long num1 = low1;
 
         while (num1 <= max1) {
 
@@ -33,7 +33,7 @@ public class Product1ToN {
 
         product2 = 1;
 
-        float num2 = low2;
+        long num2 = low2;
 
         while (num2 <= max2) {
 

@@ -27,12 +27,13 @@ public class HarmonicSum {
             numRL--;
             resultRL = resultRL + 1.0 / numRL;
 
-            System.out.println(numRL);
+            //System.out.println(numRL);
 
         } // right to left
 
         System.out.println("From left to right : " + resultLR);
         System.out.println("From right to left : " + resultRL);
+        System.out.println("The difference between both results is " + (resultRL - resultLR));
 
     }
     
