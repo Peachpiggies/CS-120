@@ -40,6 +40,18 @@ public class CozaLozaWoza {
 
             }
 
+            else if ((num % 7 == seven) && (num % 5 == three)) {
+
+                System.out.print("LozaWoza ");
+
+            }
+
+            else if ((num % 7 == seven) && (num % 5 == five) && (num % 3 == three)) {
+
+                System.out.print("CozaLozaWoza ");
+
+            }
+
             else if (num % 3 == three) {
 
                 System.out.print("Coza ");
