@@ -22,49 +22,28 @@ public class TimeTable {
     
     public static void main(String[] args) {
 
-        int row, col, row_num = 0, col_num = 0;
+        System.out.print("* |");
 
-        for (row = 1; row <= 11; row++) {
-    
-            for (col = 1; col <= 11; col++) {
-   
-                if (row == 2) {
+        for (int row = 1; row <= 9; row++) {
 
-                    System.out.print("--");
+           System.out.printf("%3d", row);
 
-                }
-
-                else if (col == 2) {
-
-                    System.out.print("| ");
-                }
-
-                else if (row == 1 && col == 1) {
-
-                    System.out.print("* ");
-
-                }
-
-                else if (row >= 3 && col == 1) {
-
-                    row_num++;
-                    System.out.print(row_num + " ");
-
-                }
-
-                else if (row == 1 && col >=3) {
-
-                    col_num++;
-                    System.out.print(col_num + " ");
-
-                }
-    
-            }
-
-            System.out.println();
-    
         }
+        System.out.println("\n------------------------------");
 
-    }
+        for (int row = 1; row <= 9; row++) {
+
+           System.out.printf("%d |", row);
+
+           for (int col = 1; col <= 9; col++) {
+
+              System.out.printf("%3d", row * col);
+
+           }
+
+           System.out.println();
+
+        }
+     }
 
 }
