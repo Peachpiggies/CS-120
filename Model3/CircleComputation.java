@@ -15,13 +15,13 @@ public class CircleComputation {
 
     public static void main(String[] args) {
 
-        float radius;
+        double radius;
         final double π = 22/7, area, circumference;
 
         Scanner in = new Scanner(System.in);
 
         System.out.println("Enter the radius : ");
-        radius = in.nextFloat();
+        radius = in.nextDouble();
 
         area = π * radius * radius;
         circumference = 2 * π * radius;
