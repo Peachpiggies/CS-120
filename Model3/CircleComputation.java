@@ -16,15 +16,15 @@ public class CircleComputation {
     public static void main(String[] args) {
 
         double radius;
-        final double π = 22/7, area, circumference;
+        double area, circumference;
 
         Scanner in = new Scanner(System.in);
 
         System.out.println("Enter the radius : ");
         radius = in.nextDouble();
 
-        area = π * radius * radius;
-        circumference = 2 * π * radius;
+        area = Math.PI * radius * radius;
+        circumference = Math.PI * (2 * radius);
 
         System.out.printf("The area is :  %.2f \nThe circumference is : %.2f", area, circumference);
 
