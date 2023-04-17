@@ -4,7 +4,7 @@
   
   - import java.util.Scanner to recive information from keyboard
   - use in.next().toLowerCase() to convert the input String to lowercase
-  - count variables use for count the String
+  - count variables use for count the String by useing if-selse condition
   - percent variables use for calcutate the percentage of both vowels and digits
 
 */
@@ -44,7 +44,7 @@ public class CheckVowelsDigits {
         double percen_digit = (double) count_digit / text.length() * 100;
 
         System.out.printf("Number of vowels: %d (%.2f%%)\n", count_vowel, percen_vowel);
-        System.out.printf("Number of digits: %d (%.2f%%)\n", count_digit, percen_digit);
+        System.out.printf("Number of digits: %d (%.2f%%)", count_digit, percen_digit);
 
         in.close();
 
