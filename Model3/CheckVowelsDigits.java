@@ -25,7 +25,9 @@ public class CheckVowelsDigits {
         text = in.next().toLowerCase();
 
         for (int n = 0; n < text.length(); n++) {
+
             char c = text.charAt(n);
+            
             if (c >= '0' && c <= '9') {
 
                 count_digit++;
