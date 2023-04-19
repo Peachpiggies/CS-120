@@ -39,7 +39,7 @@ public class TestPalindromicWord {
 
         else {
 
-            System.out.println("\"" + text + "\" is a palindrome.");
+            System.out.println("\"" + text + "\" isn't a palindrome.");
 
         }
 
