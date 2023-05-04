@@ -24,6 +24,8 @@ public class GCD {
         int gcd = gcd(a, b);
         System.out.printf("GCD ( %d ,  %d ) =  %d ", a, b, gcd);
 
+        in.close();
+
     }
 
     public static int gcd(int a, int b) {
