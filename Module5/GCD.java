@@ -13,21 +13,24 @@ public class GCD {
 
         Scanner in = new Scanner(System.in);
 
-        float a, b;
+        int a, b;
 
-        System.out.print("Enter the first number : ");
-        a = in.nextFloat();
+        System.out.println("Enter the first number : ");
+        a = in.nextInt();
 
-        System.out.print("Enter the second number : ");
-        b = in.nextFloat();
+        System.out.println("Enter the second number : ");
+        b = in.nextInt();
+
+        int gcd = gcd(a, b);
+        System.out.printf("GCD ( %d ,  %d ) =  %d ", a, b, gcd);
 
     }
 
-    public static float gcd(float a, float b) {
+    public static int gcd(int a, int b) {
 
         if (b > a) {
 
-            float temp = a;
+            int temp = a;
             a = b;
             b = temp;
 
@@ -35,7 +38,7 @@ public class GCD {
 
         while (b != 0) {
 
-            float temp = b;
+            int temp = b;
             b = a % b;
             a = temp;
 
