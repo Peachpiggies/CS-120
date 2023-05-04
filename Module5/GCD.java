@@ -21,8 +21,6 @@ public class GCD {
         System.out.print("Enter the second number : ");
         b = in.nextFloat();
 
-
-
     }
 
     public static float gcd(float a, float b) {
