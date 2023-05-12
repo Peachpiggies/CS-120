@@ -54,6 +54,8 @@ public class Paper {
         }
 
         System.out.printf("times to fold the paper : %s",fold);
+
+        input.close();
          
     }
     
