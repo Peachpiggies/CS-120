@@ -1,7 +1,7 @@
 /*
- * import Scanner
- * make if else statement to check the year corresponds to the dictionary.
- * then calculate the year and then return the year.
+ * import a Scanner 
+ * make if else statement to check the year corresponds to the dictionary, that loop in a for loop then print out the zodiac animal.
+ * then calculate the year and then return the year, also print out the zodiac animal.
 */
 
 import java.util.Scanner;
