@@ -11,8 +11,9 @@ public class ChineseZodiac {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int count_year = 0;
+        //int count_year = 0;
         int[] years = new int[8];
+		//String[] comp = new String[4];
 
         System.out.println("Enter 8 years:");
         for (int i = 0; i < 8; i++) {
@@ -20,8 +21,12 @@ public class ChineseZodiac {
             years[i] = input.nextInt();
 
         }
+		int max, min;  //declare variables max and min
+		for (int i = 0, j = 0; i<8; i+=2, j++){	//loop through your array, increasing by 2 each time.  Increase by 2 as you are looking at the pairs (2) each time through.
+			
+			for (int x = 0; x < 2; x++){
 
-        for (int year : years) {
+				int year = years[i+x];
 
             if (year == 1984 || year == 1996 || year == 2008) {
 
@@ -95,12 +100,59 @@ public class ChineseZodiac {
 
             }
 
-            count_year++;
+		    }
+            //count_year++;
+			
+			
+			
+			max = (years[i] > years[i+1]) ? years[i] : years[i+1]; //compare years[i] and years[i+1].  Put the largest value into max.
+			min = (years[i] > years[i+1]) ? years[i+1] : years[i]; //compare years[i] and years[i+1].  Put the smallest value into min.
+			
+			if ( max == min ) {	//if the 2 years are the same they are not determined.
 
+				System.out.println( "not determined");
+
+			}
+            
+            else if ( (max-min) % 4 == 0 ) { //if the 2 years are 4 steps apart (subtract them and check for mod 4) then they are compatible.
+				
+                System.out.println("compatible");
+
+			}
+            
+            else if ( (max - min) % 6 == 0 ) { //if the 2 years are 6 steps apart (subtract them and check for mod 6) then they are not compatible.
+				
+                System.out.println("not compatible");
+
+			}
+            
+            else { //anything else and they are not determined.
+
+				System.out.println("not determined");
+                
+			}
+			
         }
 
         input.close();
-
+		
+		/*
+		int max, min;  //declare variables max and min
+		for (int i = 0, j = 0; i<8; i+=2, j++){	//loop through your array, increasing by 2 each time.  Increase by 2 as you are looking at the pairs (2) each time through.
+			max = (years[i] > years[i+1]) ? years[i] : years[i+1]; //compare years[i] and years[i+1].  Put the largest value into max.
+			min = (years[i] > years[i+1]) ? years[i+1] : years[i]; //compare years[i] and years[i+1].  Put the smallest value into min.
+			
+			if (max == min){	//if the 2 years are the same they are not determined.
+				comp[j] = "not determined";
+			}else if ((max-min)%4 == 0){ //if the 2 years are 4 steps apart (subtract them and check for mod 4) then they are compatible.
+				comp[j] = "compatible";
+			}else if ((max - min)%6 == 0){ //if the 2 years are 6 steps apart (subtract them and check for mod 6) then they are not compatible.
+				comp[j] = "not compatible";
+			}else{ //anything else and they are not determined.
+				comp[j] = "not determined";
+			}
+		}
+*/
     }
 
 }
