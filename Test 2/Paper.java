@@ -29,7 +29,7 @@ public class Paper {
 
         System.out.println("");
 
-        while (fold != 7) {
+        while ((thickness * 3) < width || (thickness * 3) < length) {
 
             if (width > length) {
 
