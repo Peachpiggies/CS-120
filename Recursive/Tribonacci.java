@@ -6,8 +6,6 @@
 
 import java.util.Scanner;
 
-import javax.sound.midi.Sequence;
-
 public class Tribonacci {
 
     public static void main(String[] args) {
@@ -23,15 +21,15 @@ public class Tribonacci {
 
     }
 
-    public static int calculate(int number) {
+    public static int calculate(int sequence) {
 
-        if (number == 0) {
+        if (sequence == 0) {
 
             return 0;
 
         }
 
-        else if (number == 1 || number == 2) {
+        else if (sequence == 1 || sequence == 2) {
 
             return 1;
 
@@ -39,7 +37,7 @@ public class Tribonacci {
 
         else {
 
-            return calculate(number - 1) + calculate(number - 2) + calculate(number - 3);
+            return calculate(sequence - 1) + calculate(sequence - 2) + calculate(sequence - 3);
 
         }
 
