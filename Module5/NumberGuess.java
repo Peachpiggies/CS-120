@@ -49,6 +49,8 @@ public class NumberGuess {
 
         }
 
+        input.close();
+
     }
     
 }
