@@ -20,6 +20,8 @@ public class SumDigits {
 
         System.out.printf("The sum of the digits %s is %s", number, sum);
 
+        input.close();
+
     }
 
     public static long calculate(long number) {
