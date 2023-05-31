@@ -15,14 +15,14 @@ public class SumDigits {
         Scanner input = new Scanner(System.in);
         
         System.out.print("Enter the number to sum the digits of :");
-        int number = input.nextInt(),
+        long number = input.nextLong(),
             sum = calculate(number);
 
         System.out.printf("The sum of the digits %s is %s", number, sum);
 
     }
 
-    public static int calculate(int number) {
+    public static long calculate(long number) {
 
         if (number < 10) {
 
@@ -32,7 +32,7 @@ public class SumDigits {
         
         else {
 
-            int lastDigit = number % 10, // Get the last digit
+            long lastDigit = number % 10, // Get the last digit
                 remainingDigits = number / 10; // Remove the last digit
 
             return lastDigit + calculate(remainingDigits);
