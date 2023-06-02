@@ -4,7 +4,8 @@ public class TestCircle {
 
         Circle c1 = new Circle();
 
-        System.out.println(c1.getArea());
+        System.out.println("Radius :" + c1.getRadius());
+        System.out.println("Area : " + c1.getArea());
 
     }
     
