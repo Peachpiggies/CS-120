@@ -29,6 +29,9 @@ public class Author {
 
     }
 
+    public Author(String string, String string2, char c) {
+    }
+
     public String getName() {
 
         return name;
@@ -47,6 +50,10 @@ public class Author {
 
     }
 
-    //public Author (String name, String email, char gender) {}
+    public String toString() {
+
+        return "Name : " + name + ", Email : " + email + ", Gender : " + gender;
+
+    }
 
 }
