@@ -50,7 +50,7 @@ public class Book {
 
     public String toString() {
 
-        return ""
+        return "Book's name : " + name + "Author's info : " + author + "Book price : " + price + "Book quantity : " + qty;
 
     }
     
