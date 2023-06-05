@@ -47,5 +47,11 @@ public class Book {
         this.qty = qty;
 
     }
+
+    public String toString() {
+
+        return ""
+
+    }
     
 }
