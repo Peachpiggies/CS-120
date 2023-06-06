@@ -22,14 +22,19 @@ public class Author {
 
     private char gender = 'm';
 
-    public Author(String name, String email) {
+    public Author(String string, String string2, char c) {
+    }
+
+    public void setName(String name) {
 
         this.name = name;
-        this.email = email;
 
     }
 
-    public Author(String string, String string2, char c) {
+    public void setEmail(String email) {
+
+        this.email = email;
+
     }
 
     public String getName() {
