@@ -1,12 +1,12 @@
 public class Customer {
 
-    private int ID;
+    private int ID = 294;
 
-    private String name;
+    private String name = "Natthanan Rungjarudnon";
 
-    private char gender;
+    private char gender = 'm';
 
-    public Customer ( String name, int id ) {}
+    public Customer ( int id, String name, char gender ) {}
 
     public int getId() {
 
