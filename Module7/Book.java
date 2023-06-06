@@ -12,13 +12,13 @@ Write the Book class (which uses the Author class written earlier). Also write a
 
 public class Book {
 
-    private String name;
+    private String name = "Minecraft Guide";
 
     private Author author;
 
-    private double price;
+    private double price = 19.95;
 
-    private int qty = 0;
+    private int qty = 99;
 
     public Book ( String name, Author author, double price ) {}
 
@@ -42,7 +42,19 @@ public class Book {
 
     }
 
-    public Book( int qty ) {
+    public void setPrice ( double price ) {
+
+        this.price = price;
+
+    }
+
+    public int getQty() {
+
+        return qty;
+
+    }
+
+    public void setQty ( int qty ) {
 
         this.qty = qty;
 
@@ -50,7 +62,7 @@ public class Book {
 
     public String toString() {
 
-        return "Book's name : " + name + "Author's info : " + author + "Book price : " + price + "Book quantity : " + qty;
+        return "Book's name : " + name + " Author's info : " + author + " Book price : " + price + " Book quantity : " + qty;
 
     }
     
