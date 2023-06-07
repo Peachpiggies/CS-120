@@ -1,10 +1,10 @@
 public class Account {
 
-    private int id;
+    private int id = 24094;
 
     private Customer customer;
 
-    private double balance = 0.0;
+    private double balance = 70.0;
 
     public Account( int id, Customer customer, double balance ) {}
 
@@ -24,13 +24,50 @@ public class Account {
 
     public double getBalance() {
 
-        return getBalance();
+        return balance;
 
     }
 
-    public void setBalance() {
+    public void setBalance( double balance ) {
 
         this.balance = balance;
+
+    }
+
+    public String toString() {
+
+        return " Id :" + id + " Balance :" + String.format("%.2f", balance) + " Customer : " + customer;
+
+    }
+
+    public String getCustomerName() {
+
+        return customer.getName();
+
+    }
+
+    public double deposit( double amount ) {
+
+        balance += amount;
+        return balance;
+
+    }
+
+    public double withdraw(double amount) {
+
+        if (balance >= amount) {
+
+            balance -= amount;
+            return amount;
+
+        } 
+        
+        else {
+
+            System.out.println("Amount withdrawn exceeds the current balance!");
+            return 0.0;
+            
+        }
 
     }
     
