@@ -1,14 +1,25 @@
 public class Account {
 
-    private int id = 24094;
+    private int id;
 
     private Customer customer;
 
-    private double balance = 70.0;
+    private double balance;
 
-    public Account( int id, Customer customer, double balance ) {}
+    public Account( int id, Customer customer, double balance ) {
 
-    public Account( int id, Customer customer ) {}
+        this.id = id;
+        this.customer = customer;
+        this.balance = balance;
+
+    }
+
+    public Account( int id, Customer customer ) {
+
+        this.id = id;
+        this.customer = customer;
+
+    }
 
     public int getId() {
 

@@ -1,12 +1,20 @@
 public class Customer {
 
-    private int ID = 294;
+    private int ID;
 
-    private String name = "Natthanan Rungjarudnon";
+    private String name;
 
-    private char gender = 'm';
+    private char gender;
 
-    public Customer ( int id, String name, char gender ) {}
+    public Customer ( int ID, String name, char gender ) {
+
+        this.ID = ID;
+
+        this.name = name;
+
+        this.gender = gender;
+
+    }
 
     public int getId() {
 

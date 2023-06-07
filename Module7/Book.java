@@ -12,17 +12,30 @@ Write the Book class (which uses the Author class written earlier). Also write a
 
 public class Book {
 
-    private String name = "Minecraft Guide";
+    private String name;
 
     private Author author;
 
-    private double price = 19.95;
+    private double price;
 
     private int qty = 99;
 
-    public Book ( String name, Author author, double price ) {}
+    public Book ( String name, Author author, double price ) {
 
-    public Book ( String name, Author author, double price, int qty ) {}
+        this.name = name;
+        this.author = author;
+        this.price = price;
+
+    }
+
+    public Book ( String name, Author author, double price, int qty ) {
+
+        this.name = name;
+        this.author = author;
+        this.price = price;
+        this.qty = qty;
+
+    }
 
     public String getName() {
         

@@ -14,8 +14,8 @@ public class TestBook {
         System.out.println( "Price is : " + b1.getPrice() );
         System.out.println( "Quantity is : " + b1.getQty() );
         System.out.println( "Author is : " + b1.getAuthor() );
-        System.out.println( "Author's name is : " + a1.getName() );
-        System.out.println( "Author's email is : " + a1.getEmail() );
+        System.out.println( "Author's name is : " + b1.getAuthor().getName() );
+        System.out.println( "Author's email is : " + b1.getAuthor().getEmail() );
 
         Book b2 = new Book ( "Basic Japanese", new Author("Kirattinun Rungjarudnon", "PearThePuppies@gmail.com", 'f' ), 29.95 );
         System.out.println(b2);  
