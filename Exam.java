@@ -20,7 +20,7 @@ public class Exam {
             sum = start + end;
 
         // also use printf that we learn in "Module 3"
-        System.out.printf("The start is %d and end is %d. The number in the middle that we ignore is %d, %d, and %d. \nAlso the sum of the start and end is %d"
+        System.out.printf("The start is %d and end is %d.\n The number in the middle that we ignore is %d, %d, and %d. \nAlso the sum of the start and end is %d"
         , start, end, ignore1, ignore2, ignore3, sum);
         
     }
