@@ -7,10 +7,21 @@ public class Exam {
 
     public static void main(String[] args) {
 
-        String start = args[0];
-        String end = args[-1];
+        /* String start = args[0];
+           String end = args[-1];
 
-        if ( int start + 3 == int end ) {}
+           if ( int start + 3 == int end ) {} */ // not gonna work becuz we need int not string
+
+        // get this method from the Arithmetic.java in folder "Module 4"
+        int start = Integer.parseInt(args[0]),
+            end = Integer.parseInt(args[-1]);
+
+        if ( start + 3 == end + 1 ) {
+
+            System.out.println("noice!");
+
+        }
+        
 
     }
 
