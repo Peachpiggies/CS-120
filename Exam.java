@@ -16,9 +16,12 @@ public class Exam {
             ignore1 = Integer.parseInt(args[1]),
             ignore2 = Integer.parseInt(args[2]),
             ignore3 = Integer.parseInt(args[3]),
-            end = Integer.parseInt(args[4]);
+            end = Integer.parseInt(args[4]),
+            sum = start + end;
 
-        System.out.printf("The start is %d and end is %d", start, end);
+        // also use printf that we learn in "Module 3"
+        System.out.printf("The start is %d and end is %d. The number in the middle that we ignore is %d, %d, and %d. \nAlso the sum of the start and end is %d"
+        , start, end, ignore1, ignore2, ignore3, sum);
         
     }
 
